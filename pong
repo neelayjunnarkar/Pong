@@ -1,0 +1,77 @@
+pong()
+Program
+ClrIO
+0 -> sa
+0 -> sb 
+82 -> sxa
+0 -> sya
+68 -> sxb
+0 -> syb
+150-32 -> xa
+32 -> ya
+0 + 32 -> xb
+32 -> yb
+75 -> xp
+32 -> yp
+3 -> vxp
+3 -> vyp
+“o” -> c
+3 -> x
+While 1=1
+getKey() -> K
+If k = 338 Then
+ya -x -> ya
+ElseIf k = 344 Then
+ya + x -> ya
+EndIf
+If k = 56 Then
+yb -x -> yb
+ElseIf k = 50 Then
+yb + x -> yb
+EndIf
+If yp > 64 Then
+If vyp > 0 Then
+-vyp -> vyp
+EndIf
+EndIf
+If yp < 0 Then
+If vyp < 0 Then
+-vyp -> vyp
+EndIf
+EndIf
+If xp > xb and xp < xb+5 Then
+If yp + 5 > yb-6 and yp < yb+6 Then
+If vxp < 0 Then
+-vxp -> vxp
+EndIf
+EndIf
+EndIf
+If xp + 5 > xa and xp < xa Then
+If yp + 5 > ya - 6 and yp < ya + 6 Then
+If vxp > 0 Then
+-vxp -> vxp
+EndIf
+EndIf
+EndIf
+If xp > xa+5 and vxp > 0 Then
+sb + 1 -> sb
+75 -> xp
+32 -> yp
+EndIf
+If xp + 5 < xb and vxl < 0 Then
+sa + 1 -> sa
+75 -> xp
+32 -> yp
+EndIf
+xp + vxp -> xp
+yp + vyp -> yp
+ClrIO
+Output ya, xa, c
+Output, ya-6, xa, c
+Output yp, xp, c
+Output yb, xb, c
+Output, yb-6, xb, c
+Output sya, sea, sa
+Output syb, sxb, sb
+EndWhile
+EndPrgrm
